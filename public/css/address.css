@@ -1,0 +1,182 @@
+html,body { width: 100%; height: 100%;}
+body {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.24rem;
+	position: relative
+}
+.header-title {
+	height: 0.88rem;
+	width: 100%;
+	border-bottom: 0.02rem solid #efefef;
+	display: flex;
+	flex-shrink: 0;
+	background: linear-gradient(180deg,#fff,#efefef);
+}
+.header-title>span { height: 0.88rem;}
+.header-title>span:not(.title) {
+	width: 0.88rem;
+}
+.header-title>span>i {
+	display: block;
+	width: 0.88rem;
+	height: 0.88rem;
+	flex-shrink: 0;
+	background-position: center center;
+}
+.header-title>span>i.more {
+	background-image: url(../images/header/more.png);
+	background-repeat: no-repeat;
+	background-size: 40%;
+}
+.header-title>span>i.back {
+	background-image: url(../images/back.png);
+	background-size: 40%;
+	background-repeat: no-repeat;
+}
+.header-title>span.title {
+	flex-grow: 1;
+	text-align: center;
+	display: flex;
+	font-size: 0.32rem;
+	color: #333;
+	justify-content: center;
+	align-items: center;
+}
+/* 下方新增的收货地址 */
+div.address-wrapper {
+	flex-grow: 1;
+	overflow: auto;
+}
+div.address-wrapper>ul {
+	padding: 0.14rem 0.8rem;
+}
+div.address-wrapper>ul>li {
+	margin: 0.8rem 0;
+	position: relative;
+	border-bottom: 0.01rem solid #cbcbcb;
+	box-sizing: border-box;
+}
+div.address-wrapper>ul>li>span.receive {
+	font-size: 0.32rem;
+	color: #333;
+	font-weight: bold;
+}
+div.address-wrapper>ul>li>span.is-default {
+	font-size: 0.24rem;
+	color: #999;
+	font-weight: bold;
+	margin-left: 0.6rem;
+	display: inline-block;
+	position: absolute;
+	right: 1.2rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+div.address-wrapper>ul>li>span.is-default>* {
+	vertical-align: middle;
+}
+div.address-wrapper>ul>li>span.is-default>i {
+	display: inline-block;
+	width: 0.4rem;
+	height: 0.4rem;
+	background-image: url(../images/choise.png);
+	background-repeat: no-repeat;
+	background-size: 0.4rem;
+}
+div.address-wrapper>ul>li>span.is-default>i.checked {
+	background-image: url(../images/ichoise.png);
+}
+div.address-wrapper>ul>li>p {
+	margin-top: 0.08rem;
+	font-size: 0.28rem;
+	color: #666;
+}
+div.address-wrapper>ul>li>span.address-edit {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1rem;
+	height: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.28rem;
+	color: #e93b3d;
+}
+/* 底部新增收货地址 */
+div.footer {
+	width: 100%;
+	flex-shrink: 0;
+}
+div.footer>a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 0.92rem;
+	width: 100%;
+	font-size: 0.32rem;
+	color: #fff;
+	background-color: #E4393C;
+}
+/* 表单 */
+div.form-wrapper {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	display: none;
+	z-index: 10;
+}
+div.form-wrapper li {
+	height: 0.88rem;
+	display: flex;
+	border-bottom: 0.01rem solid #cbcbcb;
+	align-items: center;
+}
+div.form-wrapper li>label {
+	width: 1.3rem;
+	height: 100%;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.28rem;
+	color: #999;
+}
+div.form-wrapper li>input {
+	height: 0.4rem;
+	flex-grow: 1;
+	outline: none;
+	border: none;
+	font-size: 0.28rem;
+}
+li.info>select {
+	margin-right: 0.1rem;
+	font-size: 0.28rem;
+	height: 0.4rem;
+}
+div.form-wrapper li.determine {
+	padding: 0.0.2rem;
+	/* display: flex; */
+	margin: 0.3rem 0;
+}
+div.form-wrapper li.determine>span {
+	flex-grow: 1;
+	height: 100%;
+	background-color: #E4393C;
+	color: #fff;
+	border-radius: 0.08rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.32rem;
+}
+div.form-wrapper li.determine:last-child{
+	display: none;
+}
+div.form-wrapper li.determine:last-child>span {
+	background-color: #ddd;
+	color: #333;
+}

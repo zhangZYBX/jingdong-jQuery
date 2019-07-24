@@ -1,0 +1,206 @@
+html,body {height: 100%;}
+body {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.24rem;
+}
+/* 顶部部分 */
+.header {
+	height: 0.88rem;
+	width: 100%;
+	flex-shrink: 0;
+	display: flex;
+	border-bottom: 1px solid #e5e5e5;
+	background-color: #e43130;
+}
+.header-left {
+	width: 0.88rem;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header-left>span {
+	width: 0.4rem;
+	height: 0.36rem;
+	background-color: transparent;
+	background-image: url(../images/header/header-logo.png);
+	background-size: 100% 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.header-body {
+	flex-grow: 1;
+	border-radius: 0.3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: white;
+	margin: 0.14rem 0;
+	position: relative;
+}
+.header-body>i.JD {
+	width: 0.4rem;
+	height: 0.3rem;
+	margin-left: 0.1rem;
+	flex-shrink: 0;
+	background-image: url(../images/header/header-Jd.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+.header-body>i.JD:after {
+	content: '';
+	display: block;
+	width: 0.02rem;
+	height: 0.3rem;
+	background-color: #e5e5e5;
+	position: absolute;
+	left: 0.6rem;
+	
+}
+.header-body>i.search {
+	margin-left: 0.3rem;
+	width: 0.4rem;
+	height: 0.3rem;
+	flex-shrink: 0;
+	background-image: url(../images/header/jd-sprites.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: -330rem 0;
+}
+.header-body>input {
+	flex-grow: 1;
+	outline: none;
+	border: none;
+	border-radius: 0.3rem;
+	height: 100%;
+	font-size: 0.24rem;
+}
+
+.header-right {
+	flex-shrink: 0;
+	width: 0.88rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header-right>span {
+	padding: 0.2rem 0;
+	font-size: 0.28rem;
+	color: white;
+	font-weight: 400;
+}
+/* 中间内容 */
+.content {
+	flex-grow: 1;
+	overflow: auto;
+	display: flex;
+}	
+.content::-webkit-scrollbar {
+	display: none;
+}
+/*中间部分的左边*/
+.content>.left {
+	width: 1.5rem;
+	flex-shrink: 0;
+	border-right: 1px solid #ccc;
+	overflow: auto;
+	border-right: 1px solid #ccc;
+}
+.content>.left::-webkit-scrollbar {
+	display: none;
+}
+ul.category-main {
+	background-color: #f8f8f8;
+}
+ul.category-main>li {
+	width: 100%;
+	height: 0.92rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+ul.category-main>li>span { font-size: 0.28rem;}
+ul.category-main>li.active { background-color: white;}
+ul.category-main>li.active>span { color: #f23030;}
+/*中间部分的右边部分*/
+.content>.right {
+	flex-grow: 1;
+	overflow: auto;
+}
+.content>.right::-webkit-scrollbar {
+	display: none;
+}
+ul.category-sub {
+
+}
+ul.category-sub>li {
+	box-sizing: border-box;
+	width: 33.333333%;
+	padding: 0.26rem;
+	float: left;
+}
+ul.category-sub>li>a {
+	display: block;
+	text-align: center;
+}
+ul.category-sub>li>a>img { 
+	width: 100%;
+	transform: scale(0.6);
+}
+ul.category-sub>li>a>span { 
+	color: #333;
+	font-size: 0.24rem;
+}
+/* 底部部分 */
+.footer {
+	width: 100%;
+	height: 1.24rem;
+	flex-shrink: 0;
+	border-top: 0.02rem solid #e5e5e5;
+	box-sizing: border-box;
+}
+.footer>ul {
+	display: flex;
+	height: 100%;
+}
+.footer>ul>li {
+	flex-basis: 0;
+	flex-grow: 1; 
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+}
+.footer>ul>li>a {
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+.footer>ul>li:nth-child(1)>a {
+	background-image: url(../images/footer/1.1.png);
+}
+.footer>ul>li:nth-child(1)>a.active {
+	background-image: url(../images/footer/1.png);
+}
+.footer>ul>li:nth-child(2)>a {
+	background-image: url(../images/footer/2.png);
+}
+.footer>ul>li:nth-child(2)>a.active {
+	background-image: url(../images/footer/2.2.png);
+}
+.footer>ul>li:nth-child(3)>a {
+	background-image: url(../images/footer/3.png);
+}
+.footer>ul>li:nth-child(4)>a {
+	background-image: url(../images/footer/4.png);
+}
+.footer>ul>li:nth-child(5)>a {
+	background-image: url(../images/footer/5.png);
+}
+.footer>ul>li:nth-child(5)>a.logins {
+	background-image: url(../images/my.png);
+}

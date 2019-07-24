@@ -1,0 +1,228 @@
+html,body { width: 100%; height: 100%;}
+body {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.24rem;
+	overflow: hidden;
+}
+/*表头部分*/
+.header {
+	flex-shrink: 0;
+	height: 2rem;
+}
+.header-title {
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e4e4e4;
+}
+.header-title>span {
+	width: 0.8rem;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header-title>span>i {
+	display: block;
+	width: 0.88rem;
+	height: 0.88rem;
+	flex-shrink: 0;
+	background-position: center center;
+}
+.header-title>span>i.more {
+	background-image: url(../images/header/more.png);
+	background-repeat: no-repeat;
+	background-size: 40%;
+}
+.header-title>span>i.back {
+	background-image: url(../images/back.png);
+	background-size: 40%;
+	background-repeat: no-repeat;
+}
+.header-title>p {
+	flex-grow: 1;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.32rem;
+	color: #333;
+}
+div.address-wrapper {
+	padding: 0.24rem 0.2rem;
+	background: #fff url(../images/orderback.png) -7px bottom repeat-x;
+	background-size: 0.64rem 0.05rem;
+}
+div.address-wrapper>span { 
+	font-size: 0.32rem;
+	font-weight: bold;
+	margin-right: 0.2rem;
+}
+div.address-wrapper>p {
+	font-size: 0.28rem;
+	color: #333;
+}
+/* 下面区域 */
+.next-body {
+	flex-grow: 1; 
+	overflow: auto;
+	padding: 0.2rem;
+	margin-top: 0.2rem;
+}
+.order-list {
+	padding: 0 0.2rem;
+}
+.order-list li{
+	display: flex;
+	padding: 0.2rem 0;
+}
+.order-list>li>a.avatar-wrapper {
+	flex-shrink: 0;
+	width: 1.72rem;
+	height: 1.72rem;
+	border-radius:  0.08rem;
+	margin: 0 0.2rem;
+}
+.order-list li>a.avatar-wrapper>img {
+	width:100%;
+	height:100%;
+}
+.order-list>li>div.info {
+	flex-grow: 1;
+	position: relative;
+}
+.order-list>li>div.info>p {
+	color: #333;
+	font-size: 0.28rem;
+	font-weight: bolder;
+}
+.order-list>li>div.info>span {
+	font-size: 0.32rem;
+	color: #E93B3D;
+}
+.order-list>li>div.info>span:first-child {}
+.order-list>li>div.info>span:last-child { 
+	font-size: 0.24rem;
+	color: #333;
+}
+.list-wrapper {}
+.list-wrapper>ul {
+	color: #999;
+}
+.list-wrapper>ul>li {}
+.next-body>p {
+	margin-bottom: 0.4rem;
+	text-align: right;
+}
+.next-body>p>span {
+	display: inline-block;
+	font-size: 0.32rem;
+	font-weight: 700;
+}
+.next-body>p>span>em { 
+	font-style: normal;
+	font-weight: 400;
+	color: #e93b3d !important;
+}
+.next-body>p>span>em>em.price {
+	display: inline-block;
+	 font-style: normal;
+	/*font-weight: 400;
+	color: #e93b3d !important; */
+}
+div.footer {}
+div.footer>span { 
+	display: block;
+	margin: 0.2rem 0;
+	height: 0.92rem;
+	line-height: 0.92rem;
+	text-align: center;
+	border-radius: 0.08rem;
+	font-size: 0.32rem;
+}
+div.footer>span:first-child {
+	background-color: #bbebe9;
+	color: #0f8783;
+	border-color: #39c7c2;
+}
+div.footer>span:last-child {
+	background-color: #3884ff;
+	color: #fff;
+}
+div.logo-wrapper { margin: 0.5rem 0 1.5rem;}
+div.logo {
+	background-image: url(../images/orderlogo.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: 0 auto;
+	width: 2rem;
+	height: 0.4rem;
+}
+
+/* 购物车确定选择产品 */
+div.chose-product {
+	position: absolute;
+	left: 0;
+	bottom: -100%;
+	/* bottom: 0; */
+	width: 100%;
+	height: 100%;
+	transition: all 0.2s;
+	z-index: 2;
+	/* display: none */
+}
+div.chose-product>div:first-child {
+	height: 20%;
+	background-color: rgba(0,0,0,0.5);
+}
+div.chose-product>div:last-child  {
+	height: 80%;
+	padding: 0 0.4em;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	overflow: auto;
+	position: relative;
+}
+div.chose-product>div:last-child>.address-header {
+	height: 0.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f3f2f8;
+	color: #333;
+	font-size: 0.28rem;
+}
+div.chose-product>div:last-child>.address-header>i {
+	width: 0.8rem;
+	height: 0.8rem;
+	background-image: url(../images/cart-address-close.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	 position: absolute;
+	 right: 0;
+	 top: 0;
+} 
+ul.all-address>li {
+	padding: 0.34rem 0.5rem 0.34rem 0.6rem;
+	display: flex;
+}
+ul.all-address>li>input {
+	width: 0.4rem;
+	height: 0.4rem;
+}
+ul.all-address>li>p {
+	flex-grow: 1;
+	color: #666;
+	font-size: 0.32rem;
+}
+div.chose-product>div:last-child>span {
+	height: 0.88rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.32rem;
+	background-color: #e4393c;
+}

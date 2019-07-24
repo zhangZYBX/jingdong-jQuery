@@ -1,0 +1,36 @@
+* { padding: 0 ;margin: 0; }
+ul { list-style: none; }
+a { text-decoration: none; }
+.clearfix:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+}
+.ellipsis {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.overlay {
+	position: fixed; 
+	left: 0;
+	top: 0; 
+	width: 100%; 
+	height: 100%; 
+	background-color: rgba(0,0,0,0.3);
+	display: none;
+}
+.overlay:after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 0.64rem;
+	height: 0.64rem;
+	background-image: url(../images/login.gif);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}

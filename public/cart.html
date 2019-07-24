@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/cart.css">
+		<script src="js/webrem.js"></script>
+		<title>购物车</title>
+	</head>
+	<body>
+		<div class="header-title">
+			<span><i class="back"></i></span>
+			<span class="title">购物车</span>
+			<span><i class="more"></i></span>
+		</div>
+		<div class="content">
+			<div class="edit-wrapper">
+				<i></i>
+				<a href="#" class='select-address'></a>
+				<span class="btn-edit">编辑商品</span>
+			</div>
+			<ul class="cart-list">
+				
+			</ul>
+		</div>
+		
+		<div class="footer footer-normal">
+			<div class="footer-left">
+				<div class="all-wrapper clearfix">
+					<span class="checkbox all checked"></span>全选
+				</div>
+				<div class='total-price-wrapper'>
+					总计 &nbsp;: <em>￥<span class="total-price">2599</span></em>
+				</div>
+			</div>
+			<a href="#" class="btn-settlement">去结算<span class="total-count">(<em>0</em>件)</span></a>
+		</div>
+		<div class="footer footer-edit">
+			<div class="all-wrapper">
+				<span class="checkbox all"></span>全选
+			</div>
+			<div class="product-delect clearfix">
+				<a href="#"  class="btn-remove">删除</a>
+				<a href="#">移至收藏</a>
+			</div>
+		</div>	
+		<!-- 选择收货地区 -->
+		<div class='chose-product'>
+			<div></div>
+			<div>
+				<div class='address-header'><span>选择地址</span><i class='close'></i></div>
+				<ul class='all-address'>	
+				</ul>
+				<span>确认</span>
+			</div>
+		</div>	
+		<script src="js/jquery-3.4.0.js"></script>
+		<script src="js/js.cookie.min.js"></script>
+		<script src="js/myHttp.js"></script>
+		<script src="js/cart.js"></script>
+	</body>
+</html>
